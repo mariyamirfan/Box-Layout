@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Layout</title>
+    <style>
+        body {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "section aside aside"
+        "article article article"
+        "footer footer footer";
+    grid-gap: 10px;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+header {
+    grid-area: header;
+    background-color: #5d478b;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #00bfff;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+section {
+    grid-area: section;
+    background-color: #ffc0cb;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #b22222;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+article {
+    grid-area: article;
+    background-color: #4682b4;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #5d478b;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+* {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+    </style>
+</head>
+<body>
+    <header>HEADER</header>
+    <nav>NAV</nav>
+    <section>SECTION</section>
+    <aside>ASIDE</aside>
+    <article>ARTICLE</article>
+    <footer>FOOTER</footer>
+</body>
+</html>
